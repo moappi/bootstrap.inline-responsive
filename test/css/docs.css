@@ -1088,6 +1088,31 @@ h1[id] {
   border: 1px solid #d6e9c6;
 }
 
+/* Responsive inline-block tests */
+
+.visible-on .col-xs-6 .hidden-inline-block-xs,
+.visible-on .col-xs-6 .hidden-inline-block-sm,
+.visible-on .col-xs-6 .hidden-inline-block-md,
+.visible-on .col-xs-6 .hidden-inline-block-lg,
+.hidden-on .col-xs-6 .hidden-inline-block-xs,
+.hidden-on .col-xs-6 .hidden-inline-block-sm,
+.hidden-on .col-xs-6 .hidden-inline-block-md,
+.hidden-on .col-xs-6 .hidden-inline-block-lg {
+  color: #999;
+  border: 1px solid #ddd;
+}
+.visible-on .col-xs-6 .visible-inline-block-xs,
+.visible-on .col-xs-6 .visible-inline-block-sm,
+.visible-on .col-xs-6 .visible-inline-block-md,
+.visible-on .col-xs-6 .visible-inline-block-lg,
+.hidden-on .col-xs-6 .visible-inline-block-xs,
+.hidden-on .col-xs-6 .visible-inline-block-sm,
+.hidden-on .col-xs-6 .visible-inline-block-md,
+.hidden-on .col-xs-6 .visible-inline-block-lg {
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
 
 /*
  * Glyphicons
