@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+<title>
+  
+	Bootstrap Inline Responsive - Test
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="../bootstrap.inline-responsive.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="css/docs.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+  <body >
+
+
+
+  <!-- Responsive utilities
+  ================================================== -->
+  <div class="bs-docs-section" id="responsive-utilities">
+    <div class="page-header">
+      <h1>Responsive inline utilities</h1>
+    </div>
+
+    <h2 id="responsive-utilities-classes">Available classes</h2>
+    <p>Use a single or combination of the available classes for toggling content across viewport breakpoints.</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped responsive-utilities">
+        <thead>
+          <tr>
+            <th></th>
+            <th>
+              Extra small devices
+              <small>Phones (&lt;768px)</small>
+            </th>
+            <th>
+              Small devices
+              <small>Tablets (≥768px)</small>
+            </th>
+            <th>
+              Medium devices
+              <small>Desktops (≥992px)</small>
+            </th>
+            <th>
+              Large devices
+              <small>Desktops (≥1200px)</small>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th><code>.visible-inline-xs</code></th>
+            <td class="is-visible">Visible</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-hidden">Hidden</td>
+          </tr>
+          <tr>
+            <th><code>.visible-inline-sm</code></th>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-hidden">Hidden</td>
+          </tr>
+          <tr>
+            <th><code>.visible-inline-md</code></th>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-hidden">Hidden</td>
+          </tr>
+          <tr>
+            <th><code>.visible-inline-lg</code></th>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-visible">Visible</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th><code>.hidden-inline-xs</code></th>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-visible">Visible</td>
+          </tr>
+          <tr>
+            <th><code>.hidden-inline-sm</code></th>
+            <td class="is-visible">Visible</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-visible">Visible</td>
+          </tr>
+          <tr>
+            <th><code>.hidden-inline-md</code></th>
+            <td class="is-visible">Visible</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-hidden">Hidden</td>
+            <td class="is-visible">Visible</td>
+          </tr>
+          <tr>
+            <th><code>.hidden-inline-lg</code></th>
+            <td class="is-visible">Visible</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-visible">Visible</td>
+            <td class="is-hidden">Hidden</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <h2 id="responsive-utilities-tests">Test cases</h2>
+    <p>Resize your browser or load on different devices to test the responsive utility classes.</p>
+
+    <h3>Visible on...</h3>
+    <p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
+    <div class="row responsive-utilities-test visible-on">
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-xs">Extra small</span>
+        <span class="visible-inline-xs">✔ Visible on x-small</span>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-sm">Small</span>
+        <span class="visible-inline-sm">✔ Visible on small</span>
+      </div>
+      <div class="clearfix visible-inline-xs"></div>
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-md">Medium</span>
+        <span class="visible-inline-md">✔ Visible on medium</span>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-lg">Large</span>
+        <span class="visible-inline-lg">✔ Visible on large</span>
+      </div>
+    </div>
+    <div class="row responsive-utilities-test visible-on">
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-xs hidden-inline-sm">Extra small and small</span>
+        <span class="visible-inline-xs visible-inline-sm">✔ Visible on x-small and small</span>
+      </div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-md hidden-inline-lg">Medium and large</span>
+        <span class="visible-inline-md visible-inline-lg">✔ Visible on medium and large</span>
+      </div>
+      <div class="clearfix visible-inline-xs"></div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-xs hidden-inline-md">Extra small and medium</span>
+        <span class="visible-inline-xs visible-inline-md">✔ Visible on x-small and medium</span>
+      </div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-sm hidden-inline-lg">Small and large</span>
+        <span class="visible-inline-sm visible-inline-lg">✔ Visible on small and large</span>
+      </div>
+      <div class="clearfix visible-inline-xs"></div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-xs hidden-inline-lg">Extra small and large</span>
+        <span class="visible-inline-xs visible-inline-lg">✔ Visible on x-small and large</span>
+      </div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-sm hidden-inline-md">Small and medium</span>
+        <span class="visible-inline-sm visible-inline-md">✔ Visible on small and medium</span>
+      </div>
+    </div>
+
+    <h3>Hidden on...</h3>
+    <p>Here, green checkmarks also indicate the element <strong>is hidden</strong> in your current viewport.</p>
+    <div class="row responsive-utilities-test hidden-on">
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-xs">Extra small</span>
+        <span class="visible-inline-xs">✔ Hidden on x-small</span>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-sm">Small</span>
+        <span class="visible-inline-sm">✔ Hidden on small</span>
+      </div>
+      <div class="clearfix visible-inline-xs"></div>
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-md">Medium</span>
+        <span class="visible-inline-md">✔ Hidden on medium</span>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <span class="hidden-inline-lg">Large</span>
+        <span class="visible-inline-lg">✔ Hidden on large</span>
+      </div>
+    </div>
+    <div class="row responsive-utilities-test hidden-on">
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-xs hidden-inline-sm">Extra small and small</span>
+        <span class="visible-inline-xs visible-inline-sm">✔ Hidden on x-small and small</span>
+      </div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-md hidden-inline-lg">Medium and large</span>
+        <span class="visible-inline-md visible-inline-lg">✔ Hidden on medium and large</span>
+      </div>
+      <div class="clearfix visible-inline-xs"></div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-xs hidden-inline-md">Extra small and medium</span>
+        <span class="visible-inline-xs visible-inline-md">✔ Hidden on x-small and medium</span>
+      </div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-sm hidden-inline-lg">Small and large</span>
+        <span class="visible-inline-sm visible-inline-lg">✔ Hidden on small and large</span>
+      </div>
+      <div class="clearfix visible-inline-xs"></div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-xs hidden-inline-lg">Extra small and large</span>
+        <span class="visible-inline-xs visible-inline-lg">✔ Hidden on x-small and large</span>
+      </div>
+      <div class="col-xs-6 col-sm-6">
+        <span class="hidden-inline-sm hidden-inline-md">Small and medium</span>
+        <span class="visible-inline-sm visible-inline-md">✔ Hidden on small and medium</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
